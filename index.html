@@ -1,42 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Visor de PDF con PDF.js</title>
 
-   <!-- Agregar la biblioteca PDF.js -->
-   <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
-</head>
-<body>
-   <!-- Contenido de la página -->
-   <div id="pdf-viewer"></div>
-
-   <!-- Tu código JavaScript para cargar y mostrar el PDF con PDF.js aquí -->
-   <script>
-      // Cargar PDF.js y mostrar el PDF
-      var pdfUrl = 'David_Maratrat.pdf';
-      pdfjsLib.getDocument(pdfUrl).then(function(pdfDoc) {
-         for (var pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
-            pdfDoc.getPage(pageNum).then(function(page) {
-               var scale = 1.5;
-               var viewport = page.getViewport({ scale: scale });
-
-               var canvas = document.createElement('canvas');
-               var context = canvas.getContext('2d');
-               canvas.height = viewport.height;
-               canvas.width = viewport.width;
-
-               var renderContext = {
-                  canvasContext: context,
-                  viewport: viewport
-               };
-               document.getElementById('pdf-viewer').appendChild(canvas);
-
-               page.render(renderContext);
-            });
-         }
-      });
-   </script>
-</body>
+<!doctype html>
+<html>
+   <body style='height: 100%; width: 100%; overflow: hidden; margin:0px; background-color: rgb(82, 86, 89);'>
+      <embed name='David_Maratrat' style='position:absolute; left: 0; top: 0;'width='100%' height='100%' src='about:blank' type='application/pdf'>
+   </body>
 </html>
