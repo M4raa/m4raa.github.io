@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 <body>
-  <style type="text/css">
-    html, body, embed {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-</style>
-  <embed id="pdfDoc" src="David_Maratrat.pdf" type="application/pdf" width="100%" height="100%" />
+ <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+<div id="pdf-viewer"></div>
+<script>
+   // Cargar PDF.js y mostrar el PDF
+   var pdfUrl = 'David_Maratrat.pdf';
+   pdfjsLib.getDocument(pdfUrl).then(function(pdfDoc) {
+      for (var pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
+         pdfDoc.getPage(pageNum).then(function(page) {
+            var scale = 1.5;
+            var viewport = page.getViewport({ scale: scale });
+
+            var canvas = document.createElement('canvas');
+            var context = canvas.getContext('2d');
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
+
+            var renderContext = {
+               canvasContext: context,
+               viewport: viewport
+            };
+            document.getElementById('pdf-viewer').appendChild(canvas);
+
+            page.render(renderContext);
+         });
+      }
+   });
+</script>
+
 </body>
 </html>
