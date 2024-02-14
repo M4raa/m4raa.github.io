@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>formulario</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="tituloContacto"><img alt="isaac_dancing" src="content/isaac.gif">Contacto<img alt="isaac_dancing" src="content/isaac.gif"></h1>
+            <nav>
+                <ul class="estiloNav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="objetos.html">Objetos</a></li>
+                    <li><a href="salas.html">Salas</a></li>
+                    <li><a href="recolectables.html">Recolectables</a></li>
+                    <li><a href="jefes.html">Jefes</a></li>
+                    <li><a href="contacto_form.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <br>
+        <form id="formContacto">
+        <fieldset>
+            <legend>Formulario Contacto</legend>
+        <table id="tabla_contacto">
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="text" class="estilo1" name="formContacto" id="nombre" placeholder="Nombre">
+                    </td>
+                    <td>
+                        <input type="number" class="estilo1" name="formContacto" id="tlf" placeholder="Teléfono">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" class="estilo1" name="formContacto" id="correo" size="50" placeholder="Correo">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>Mensaje</label>
+                        <br>
+                            <textarea name="formContacto" class="estilo1" id="intereses" rows="4" cols="50"></textarea>
+                        <br>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <input type="checkbox" name="formContacto" id="terminos">
+            <label>Acepto los términos y condiciones</label>
+        </div>
+            <div>
+                <input type="submit" name="formContacto" id="enviarForm">
+                <input type="reset" name="formContacto" id="resetForm">
+            </div>
+        </fieldset>
+        </form>
+        <div></div>
+        <footer>
+            <hr>
+            <div>
+                <button type="button" name="volver" id="volver"><a href="#tituloContacto">Volver arriba</a></button>
+            </div>
+            <nav>
+                <ul class="estiloNav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="objetos.html">Objetos</a></li>
+                    <li><a href="salas.html">Salas</a></li>
+                    <li><a href="recolectables.html">Recolectables</a></li>
+                    <li><a href="jefes.html">Jefes</a></li>
+                    <li><a href="contacto_form.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
