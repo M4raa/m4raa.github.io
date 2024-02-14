@@ -16,7 +16,11 @@ body{
     display: flex;
     flex-direction: column;
 }
+.content{
+    flex:1;
+}
 nav{
+    padding-top: 50px;
     display: flex;
     justify-content: center;
 }
@@ -33,4 +37,8 @@ nav li{
 footer{
     background-color: rgb(100,100,150);
     padding-left: 50px;
+    bottom:0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
 }
