@@ -10,6 +10,7 @@ body{
     background-image: url(content/nyan.gif);
     margin: 0;
     padding: 0;
+    flex-direction: column;
 }
 nav{
     position: absolute;
