@@ -9,11 +9,24 @@ body{
     background-color: aliceblue;
     margin: 0;
     padding: 0;
-    min-height:100vh;
+    min-height:125vh;
     display: flex;
     flex-direction: column;
 }
-content{
+
+a:link{
+    text-decoration: none;
+    background: -webkit-linear-gradient(rgb(0, 0, 0),rgb(128, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+a:hover{
+    color:rgb(100,100,190);
+    font-style:oblique;
+    font-weight: bold;
+}
+.content{
     flex: 1;
 }
 footer{
@@ -32,7 +45,8 @@ div{
     color: black;
     list-style: none;
 }
-.estiloNav li{
+
+.estiloNav li {
     display: inline;
     background-color: aliceblue;
     border-style: solid;
@@ -40,12 +54,15 @@ div{
     border-radius: 5px;
     padding: 2px;
 }
+
+
 #formContacto{
     background-color: aliceblue;
     max-width: max-content;
     border-style:solid;
     border-radius: 5px;
     border-color: black;
+    padding: 1%;
     
 }
 .estilo1{
@@ -71,14 +88,6 @@ div{
     text-align: center;
     
     
-}
-#volverArriba a{
-    background-color: aliceblue;
-    border-style: solid;
-    border-color: rgb(0,0,0,0.2);
-    border-radius: 5px;
-    padding: 2px;
-    cursor: pointer;
 }
 .inFotter div{
     border-style: solid;
