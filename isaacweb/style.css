@@ -144,6 +144,11 @@ div{
 .inFotter p{
     padding: 5px;
 }
+.inFotter img{
+    height: 10%;
+    width: 10%;
+
+}
 .pO{
     text-align: justify;
     margin-left: 2%;
