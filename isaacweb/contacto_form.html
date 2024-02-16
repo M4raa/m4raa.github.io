@@ -8,6 +8,11 @@
     </head>
     <body>
         <header>
+            <div id="rrss">
+                <a href="rss.rss" target="_blank"><img src="content/ssd.png" alt="rss"></a>
+                <a href="https://github.com/M4raa" target="_blank"><img src="content/github.png" alt="rss"></a>
+                <a href="https://twitter.com" target="_blank"><img src="content/twitter.png" alt="rss"></a>
+            </div>
             <h1 id="tituloContacto"><img alt="isaac_dancing" src="content/isaac.gif">Contacto<img alt="isaac_dancing" src="content/isaac.gif"></h1>
             <nav>
                 <ul class="estiloNav">
@@ -22,6 +27,7 @@
             <hr>
         </header>
         <br>
+        <div id="bC">
         <form id="formContacto">
         <fieldset>
             <legend>Formulario Contacto</legend>
@@ -29,22 +35,22 @@
             <tbody>
                 <tr>
                     <td>
-                        <input type="text" class="estilo1" name="formContacto" id="nombre" placeholder="Nombre">
+                        <input type="text" id="nomC" name="formContacto" id="nombre" placeholder="Nombre">
                     </td>
                     <td>
-                        <input type="number" class="estilo1" name="formContacto" id="tlf" placeholder="Teléfono">
+                        <input type="number" id="tlfC" name="formContacto" id="tlf" placeholder="Teléfono">
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <input type="text" class="estilo1" name="formContacto" id="correo" size="50" placeholder="Correo">
+                        <input type="text" class="estiloC" name="formContacto" id="correo" size="50" placeholder="Correo">
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
                         <label>Mensaje</label>
                         <br>
-                            <textarea name="formContacto" class="estilo1" id="intereses" rows="4" cols="50"></textarea>
+                            <textarea name="formContacto" class="estiloC" id="intereses" rows="4" cols="50"></textarea>
                         <br>
                     </td>
                 </tr>
@@ -54,12 +60,13 @@
                 <input type="checkbox" name="formContacto" id="terminos">
                 <label>Acepto los términos y condiciones</label>
             </div>
-            <div>
+            <div id="butC">
                 <input type="submit" name="formContacto" id="enviarForm">
                 <input type="reset" name="formContacto" id="resetForm">
             </div>
         </fieldset>
         </form>
+        </div>
         <div></div>
         <footer>
             <br>
@@ -76,16 +83,11 @@
             <br>
             <div>
                 <ul class="estiloNav">
-                    <li><a href="#tituloInicio">Volver Arriba</a></li>
+                    <li><a href="#tituloContacto">Volver Arriba</a></li>
                 </ul>
             </div>
             <div class="inFotter">
                 <p>Aquí teneis un enlace a otra web sobre el juego: <a href="https://bindingofisaac.fandom.com/es/wiki/The_Binding_of_Isaac_Wiki" target="_blank">Pulsa aquí</a></p>
-                <div>
-                    <a href="rss.rss" target="_blank"><img src="content/ssd.png" alt="rss"></a>
-                    <a href="https://github.com/M4raa" target="_blank"><img src="content/github.png" alt="rss"></a>
-                    <a href="https://twitter.com" target="_blank"><img src="content/twitter.png" alt="rss"></a>
-                </div>
             </div>
         </footer>
     </body>

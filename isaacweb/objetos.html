@@ -8,6 +8,11 @@
     </head>
     <body>
         <header>
+            <div id="rrss">
+                <a href="rss.rss" target="_blank"><img src="content/ssd.png" alt="rss"></a>
+                <a href="https://github.com/M4raa" target="_blank"><img src="content/github.png" alt="rss"></a>
+                <a href="https://twitter.com" target="_blank"><img src="content/twitter.png" alt="rss"></a>
+            </div>
             <h1 id="tituloObjetos"><img alt="isaac_dancing" src="content/isaac.gif">Objetos<img alt="isaac_dancing" src="content/isaac.gif"></h1>
             <nav>
                 <ul class="estiloNav">
@@ -22,20 +27,16 @@
             <hr>
         </header>
             <div>
-                    <table>
+                    <table id="tablaObjetos">
                         <caption>Objetos</caption>
-                        <colgroup>
-                            <col span="1" class="col">
-                            <col span="2" class="col">
-                        </colgroup>
                         <thead>
                         <tr>
-                            <th scope="colgroup">ID</th>
-                            <th scope="colgroup">Nombre</th>
-                            <th scope="colgroup">Icono</th>
-                            <th scope="colgroup">Frase</th>
-                            <th scope="colgroup">Descripción</th>
-                            <th scope="colgroup">Calidad</th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Icono</th>
+                            <th scope="col">Frase</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Calidad</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -44,7 +45,7 @@
                                 <td>Un Pony</td>
                                 <td><img alt="Un pony" src="content/unpony.webp"></td>
                                 <td><p>Vuela y dashea</p></td>
-                                <td><p>Otorga a Isaac vuelo y velocidad de manera pasiva. Cuando se usa, Isaac carga en una dirección a gran velocidad, siendo invulnerable durante la carga y efectuando daño a los enemigos golpeados.</p></td>
+                                <td><p class="pO">Otorga a Isaac vuelo y velocidad de manera pasiva. Cuando se usa, Isaac carga en una dirección a gran velocidad, siendo invulnerable durante la carga y efectuando daño a los enemigos golpeados.</p></td>
                                 <td>2</td>
                             </tr>
                             <tr>
@@ -60,15 +61,15 @@
                                 <td>Mejores amigos</td>
                                 <td><img alt="mejores amigos" src="content/mejores_amigos.webp"></td>
                                 <td><p>Amigos hasta el final</p></td>
-                                <td><p>Genera un Isaac de señuelo que explota a los 5 segundos. Los enemigos siempre atacarán al señuelo ignorando a Isaac.</p></td>
+                                <td><p class="pO">Genera un Isaac de señuelo que explota a los 5 segundos. Los enemigos siempre atacarán al señuelo ignorando a Isaac.</p></td>
                                 <td>1</td>
                             </tr>
                             <tr>
                                 <td>4</td>
                                 <td>Carta Blanca</td>
                                 <td><img alt="carta blanca" src="content/carta_blanca.webp"></td>
-                                <td><p>Copia el efecto de la carta o runa que sostiene Isaac en el momento.</p></td>
                                 <td><p>Carta mímica</p></td>
+                                <td><p class="pO">Copia el efecto de la carta o runa que sostiene Isaac en el momento.</p></td>
                                 <td>2</td>
                             </tr>
                             <tr>
@@ -76,7 +77,7 @@
                                 <td>Derechos de Sangre</td>
                                 <td><img alt="derechos de sangre" src="content/derechos_de_sangre.webp"></td>
                                 <td><p>Daño enemigo en masa por un coste</p></td>
-                                <td><p>Al usarse hace 40 de daño a los enemigos a cambio de 1 corazón. Al usarse varias veces en la misma habitación solo consumirá corazón.</p></td>
+                                <td><p class="pO">Al usarse hace 40 de daño a los enemigos a cambio de 1 corazón. Al usarse varias veces en la misma habitación solo consumirá corazón.</p></td>
                                 <td>0</td>
                             </tr>
                             <tr>
@@ -84,7 +85,7 @@
                                 <td>Cabeza Podrida de Bob</td>
                                 <td><img alt="cabeza podridad de bob" src="content/cabeza_podrida_de_bob.webp"></td>
                                 <td><p>Bomba lanzable reutilizable</p></td>
-                                <td><p>Al usarse, Isaac sostiene una bomba venenosa la cual puede lanzar en la dirección en la que mira.</p></td>
+                                <td><p class="pO">Al usarse, Isaac sostiene una bomba venenosa la cual puede lanzar en la dirección en la que mira.</p></td>
                                 <td>1</td>
                             </tr>
                             <tr>
@@ -92,7 +93,7 @@
                                 <td>Libro de las Revelaciones</td>
                                 <td><img alt="libro de las revelaciones" src="content/libro_de_las_revelaciones.webp"></td>
                                 <td><p>Protección del alma reutilizable</p></td>
-                                <td><p>Incrementa la posibilidad de aparición de la sala del Ángel / Diáblo mientras se sostenga. Al usarlo suelta un corazón de Álma y reemplaza el jefe del piso por un jinete si es posible.</p></td>
+                                <td><p class="pO">Incrementa la posibilidad de aparición de la sala del Ángel / Diáblo mientras se sostenga. Al usarlo suelta un corazón de Álma y reemplaza el jefe del piso por un jinete si es posible.</p></td>
                                 <td>3</td>
                             </tr>
                             <tr>
@@ -100,7 +101,7 @@
                                 <td>Libro de los Secretos</td>
                                 <td><img alt="libro de los secretos" src="content/libro_de_los_secretos.webp"></td>
                                 <td><p>Tomo del conocimiento</p></td>
-                                <td><p>Proporciona el efecto de <i>Mapa del Tesoro</i>, <i>El Compás</i> o del <i>Mapa Azul</i> durante el piso actual.</p></td>
+                                <td><p class="pO">Proporciona el efecto de <i>Mapa del Tesoro</i>, <i>El Compás</i> o del <i>Mapa Azul</i> durante el piso actual.</p></td>
                                 <td>1</td>
                             </tr>
                             <tr>
@@ -108,7 +109,7 @@
                                 <td>Libro de las Sombras</td>
                                 <td><img alt="libro de las sombras" src="content/libro_de_las_sombras.webp"></td>
                                 <td><p>Invencibilidad temporal</p></td>
-                                <td><p>Crea un escudo que mitiga cualquier tipo de daño en la habitación actual durante 10 segundos.</p></td>
+                                <td><p class="pO">Crea un escudo que mitiga cualquier tipo de daño en la habitación actual durante 10 segundos.</p></td>
                                 <td>3</td>
                             </tr>
                             <tr>
@@ -116,7 +117,7 @@
                                 <td>Caja de Arañas</td>
                                 <td><img alt="caja de arañas" src="content/caja_de_aranas.webp"></td>
                                 <td><p>Es una caja de arañas</p></td>
-                                <td><p>Genera 1-4 arñas azules que hacen 2.5x del daño de Isaac.</p></td>
+                                <td><p class="pO">Genera 1-4 arñas azules que hacen 2.5x del daño de Isaac.</p></td>
                                 <td>1</td>
                             </tr>
                         </tbody>
@@ -137,16 +138,11 @@
                     <br>
                     <div>
                         <ul class="estiloNav">
-                            <li><a href="#tituloInicio">Volver Arriba</a></li>
+                            <li><a href="#tituloObjetos">Volver Arriba</a></li>
                         </ul>
                     </div>
                     <div class="inFotter">
                         <p>Aquí teneis un enlace a otra web sobre el juego: <a href="https://bindingofisaac.fandom.com/es/wiki/The_Binding_of_Isaac_Wiki" target="_blank">Pulsa aquí</a></p>
-                        <div>
-                            <a href="rss.rss" target="_blank"><img src="content/ssd.png" alt="rss"></a>
-                            <a href="https://github.com/M4raa" target="_blank"><img src="content/github.png" alt="rss"></a>
-                            <a href="https://twitter.com" target="_blank"><img src="content/twitter.png" alt="rss"></a>
-                        </div>
                     </div>
                 </footer>
     </body>
