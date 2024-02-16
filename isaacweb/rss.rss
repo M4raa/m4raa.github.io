@@ -9,7 +9,8 @@
             <title>Objetos del juego</title>
             <link>https://m4raa.github.io/isaacweb/objetos.html</link>
             <description>Aqui tendrás todos los objetos del juego.</description>
-            <url medium="image" type="image/png">https://m4raa.github.io/isaacweb/content/ssd.png</url>
+            <url>https://m4raa.github.io/isaacweb/content/ssd.png</url>
+            <enclosure length="24986239" type="image/png" url="https://m4raa.github.io/isaacweb/content/ssd.png" />
         </item>
         </channel>
 </rss>
