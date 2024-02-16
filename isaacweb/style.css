@@ -138,15 +138,13 @@ div{
     
     
 }
-.inFotter a{
-    padding: 5px;
-}
-.enF{
-    width: 20px;
-    height: 20px;
-}
 .inFotter p{
     padding: 5px;
+}
+.inFotter img{
+    padding: 10px;
+    height: 10%;
+    width: 60px;
 }
 
 .pO{
