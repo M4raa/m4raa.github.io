@@ -47,7 +47,7 @@ div{
 .estiloNav{
     margin: 0;
     padding: 0;
-    padding-left: 10px;
+    padding-left: 1%;
     color: black;
     list-style: none;
 }
@@ -58,7 +58,7 @@ div{
     border-style: solid;
     border-color: rgb(0,0,0,0.2);
     border-radius: 5px;
-    padding: 2px;
+    padding: 0.1%;
 }
 #formContacto{
     background-color: aliceblue;
@@ -72,9 +72,9 @@ div{
     background-color: rgba(230,230,255) ;
     border-style: solid;
     border-color: rgb(0,0,0,0.3);
-    border-width: 1.5px;
+    border-width: 1px;
     border-radius: 5px;
-    margin-top: 5px;
+    margin-top: 2%;
 }
 #butC input:hover{
     cursor: pointer;
@@ -113,7 +113,7 @@ div{
     border-width: 2px;
     border-color: rgb(100,100,150,0.5);
     color: black;
-    margin: 5px;
+    margin: 0.5%;
     
 }
 #tablaObjetos tr td{
