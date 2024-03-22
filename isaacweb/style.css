@@ -15,6 +15,18 @@ body{
     display: flex;
     flex-direction: column;
 }
+body::-webkit-scrollbar {
+    width: 11px;
+}
+body::-webkit-scrollbar-track {
+    background: rgb(100,100,150,0.5);
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(100,100,190);
+    border-radius: 20px;
+    border: 2px solid white;
+}
 div bC{
    text-align: center;
 }
@@ -56,7 +68,8 @@ div{
     display: inline;
     background-color: aliceblue;
     border-style: solid;
-    border-color: rgb(0,0,0,0.2);
+    border-color: rgb(0,0,0,0.3);
+    border-width: 2px;
     border-radius: 5px;
     padding: 0.1%;
 }
@@ -66,7 +79,7 @@ div{
     border-radius: 5px;
     border-color: black;
     padding: 2%;
-    scale: 110%;   
+    scale: 120%;   
 }
 #formContacto #enviarForm, #resetForm{
     background-color: rgba(230,230,255) ;
@@ -113,7 +126,7 @@ div{
     border-width: 2px;
     border-color: rgb(100,100,150,0.5);
     color: black;
-    margin: 0.5%;
+    margin: 5px;
     
 }
 #tablaObjetos tr td{
@@ -122,27 +135,33 @@ div{
     border-color: rgb(100,100,150,0.5);
     border-radius: 5px;
     text-align: center;
-    
-    
 }
-.inFotter div{
-    border-style: dashed;
-    height: min-content;
+#tablaObjetos caption{
+    font-weight: bold;
+    font-size: large;
+    padding-bottom: 10px;
 }
 .inFotter p{
     padding: 5px;
-    border-style: dashed;
 }
+.inFotter img{
+    height: 40px;
+    width: 40px;
+}
+
 .pO{
     text-align: justify;
-    margin: 5px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 #rrss img{
     float:right ;
     width: 25px;
     height: 25px;
     padding: 3px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-width: 2px;
     border-style: solid;
     border-color: black;
     border-radius: 50%;
