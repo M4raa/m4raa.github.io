@@ -203,6 +203,9 @@ div {
     #bC{
         scale: 50%;
     }
+    #tablaObjetos{
+        scale: 80%;
+    }
 
 }
 
@@ -210,6 +213,12 @@ div {
     #vid{
         height: 60%;
         width: 60%;
+    }
+    #bC{
+        scale: 70%;
+    }
+    #tablaObjetos{
+        scale: 90%;
     }
 }
 
