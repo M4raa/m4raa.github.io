@@ -1,171 +1,240 @@
-/* Estilos base */
 html {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(content/bg.webp);
-    background-size: cover;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.8);
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  background-image: url(content/bg.webp);
+  background-size: 100%;
 }
 
 header {
-    background-color: rgba(100, 100, 150, 0.8);
-    padding: 10px;
+  background-color: rgba(100, 100, 150, 0.8);
 }
 
-footer {
-    background-color: rgba(100, 100, 150, 0.8);
-    padding: 10px;
+body {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  padding: 0;
+  min-height: 125vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Scrollbar */
 body::-webkit-scrollbar {
-    width: 11px;
+  width: 11px;
 }
 
 body::-webkit-scrollbar-track {
-    background: rgba(100, 100, 150, 0.5);
+  background: rgba(100, 100, 150, 0.5);
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: rgb(100, 100, 190);
-    border-radius: 20px;
-    border: 2px solid white;
+  background-color: rgba(100, 100, 190);
+  border-radius: 20px;
+  border: 2px solid white;
 }
 
-/* Contenido */
-.content {
-    flex: 1;
-    padding: 20px;
-    text-align: center; /* Centrar el contenido */
+div bC {
+  text-align: center;
 }
 
-/* Enlaces */
-a:link, a:visited {
-    text-decoration: none;
-    color: rgb(128, 0, 255);
-    transition: color 0.3s ease;
+a:link {
+  text-decoration: none;
+  background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(128, 0, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 a:hover {
-    color: rgb(100, 100, 190);
-    font-style: italic;
-    font-weight: bold;
+  color: rgba(100, 100, 190);
+  font-style: oblique;
+  font-weight: bold;
 }
 
-/* Formulario de contacto */
-#formContacto {
-    background-color: rgba(230, 230, 255, 0.9);
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 20px;
-    max-width: 600px;
-    margin: auto;
+.content {
+  flex: 1;
 }
 
-#formContacto #enviarForm, #resetForm {
-    background-color: rgba(230, 230, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    margin-top: 10px;
-    cursor: pointer;
+footer {
+  background-color: rgba(100, 100, 150, 0.8);
 }
 
-#formContacto #enviarForm:hover, #resetForm:hover {
-    background-color: rgb(200, 200, 255);
+fieldset {
+  max-width: max-content;
+  border: hidden;
 }
 
-/* Estilos de la barra de navegación */
+div {
+  margin: auto;
+}
+
 .estiloNav {
-    margin: 0;
-    padding: 0;
-    padding-left: 1%;
-    color: black;
-    list-style: none;
-    display: flex;
-    justify-content: flex-start; /* A la izquierda */
+  margin: 0;
+  padding: 0;
+  padding-left: 1%;
+  color: black;
+  list-style: none;
 }
 
 .estiloNav li {
-    margin: 5px;
-    padding: 5px 10px;
-    background-color: aliceblue;
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
+  display: inline;
+  background-color: aliceblue;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-width: 2px;
+  border-radius: 5px;
+  padding: 0.1%;
 }
 
-/* Estilos para elementos de formulario */
-.estiloC, #nomC, #tlfC {
-    background-color: rgba(230, 230, 255, 0.9);
-    border: 1px solid black;
-    border-radius: 3px;
-    margin-bottom: 10px;
-    padding: 5px;
-    width: 100%;
-    box-sizing: border-box;
+#formContacto {
+  background-color: aliceblue;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: black;
+  padding: 2%;
+  scale: 120%;
 }
 
-/* Tabla de objetos */
+#formContacto #enviarForm,
+#resetForm {
+  background-color: rgba(230, 230, 255);
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-width: 1px;
+  border-radius: 5px;
+  margin-top: 2%;
+}
+
+#butC input:hover {
+  cursor: pointer;
+  background-color: rgba(200, 200, 255);
+}
+
+.estiloC {
+  background-color: rgba(230, 230, 255);
+  border-style: solid;
+  border-radius: 2px;
+  border-width: 1px;
+  margin: 0;
+  width: 100%;
+  border-color: black;
+}
+
+#nomC {
+  background-color: rgba(230, 230, 255);
+  border-style: solid;
+  border-radius: 2px;
+  border-width: 1px;
+  width: 97%;
+  border-color: black;
+}
+
+#tlfC {
+  background-color: rgba(230, 230, 255);
+  border-style: solid;
+  border-radius: 2px;
+  border-width: 1px;
+  width: 100%;
+  border-color: black;
+}
+
 #tablaObjetos {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 10px 0;
+  text-align: center;
+  background-color: aliceblue;
+  border-style: solid;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: rgba(100, 100, 150, 0.5);
+  color: black;
+  margin: 5px;
 }
 
-#tablaObjetos th, #tablaObjetos td {
-    border: 2px solid rgba(100, 100, 150, 0.5);
-    padding: 8px;
+#tablaObjetos tr td {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(100, 100, 150, 0.5);
+  border-radius: 5px;
+  text-align: center;
 }
 
 #tablaObjetos caption {
-    font-weight: bold;
-    font-size: 1.2em;
-    padding-bottom: 10px;
+  font-weight: bold;
+  font-size: large;
+  padding-bottom: 10px;
 }
 
-/* Imágenes en el footer */
+.inFotter p {
+  padding: 5px;
+}
+
 .inFotter img {
-    height: 40px;
-    width: 40px;
-    margin-right: 10px;
-    border: 2px solid black;
-    border-radius: 50%;
-    background-color: aliceblue;
+  height: 40px;
+  width: 40px;
 }
 
-/* Estilos para párrafos */
 .pO {
-    text-align: justify;
+  text-align: justify;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
-/* Responsive */
-@media only screen and (max-width: 768px) {
-    .estiloNav li {
-        padding: 5px;
-    }
-    
-    #formContacto {
-        padding: 10px;
-    }
+#rrss img {
+  float: right;
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 50%;
+  background-color: aliceblue;
 }
 
-@media only screen and (max-width: 480px) {
-    .estiloNav {
-        flex-direction: column;
-        align-items: center;
-    }
+@media only screen and (max-width: 600px) {
+  body {
+    min-height: 200vh;
+  }
 
-    .estiloNav li {
-        margin: 5px 0;
-    }
+  .estiloNav li {
+    padding: 5px;
+  }
 
-    #formContacto {
-        padding: 10px;
-    }
+  #formContacto {
+    padding: 5%;
+  }
+
+  #nomC,
+  #tlfC {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .estiloNav li {
+    padding: 10px;
+  }
+
+  #formContacto {
+    padding: 10%;
+  }
+
+  #nomC,
+  #tlfC {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .estiloNav li {
+    padding: 15px;
+  }
+
+  #formContacto {
+    padding: 15%;
+  }
+
+  #nomC,
+  #tlfC {
+    width: 60%;
+  }
 }
