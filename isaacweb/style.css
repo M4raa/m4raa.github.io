@@ -200,6 +200,10 @@ div {
         height: 70%;
         width: 70%;
     }
+    #bC{
+        scale: 50%;
+    }
+
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
