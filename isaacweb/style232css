@@ -1,127 +1,241 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+/* Estilos base */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  background-image: url(content/bg.webp);
+  background-size: 100%;
 }
-#bI li{
-    list-style: none;
-}
-#bII{
-    text-align: justify;
-    border-style: solid;
-    margin: 0;
-    padding: 0;
-}
+
 header {
-    background-color: rgba(83, 109, 121, 0.9);
-    padding: 20px;
-    text-align: center;
+  background-color: rgba(100, 100, 150, 0.8);
 }
 
-header a, footer a {
-    margin-right: 10px;
-    color: #333;
+body {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  padding: 0;
+  min-height: 125vh;
+  display: flex;
+  flex-direction: column;
 }
 
-h1 {
-    color: #333;
-    font-size: 36px;
+body::-webkit-scrollbar {
+  width: 11px;
 }
 
-nav {
-    margin-bottom: 20px;
-    text-align: center;
+body::-webkit-scrollbar-track {
+  background: rgba(100, 100, 150, 0.5);
 }
 
-ul.estiloNav {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 190);
+  border-radius: 20px;
+  border: 2px solid white;
 }
 
-ul.estiloNav li {
-    display: inline-block;
-    margin-right: 10px;
+div bC {
+  text-align: center;
 }
 
-ul.estiloNav li a {
-    text-decoration: none;
-    color: #333;
+a:link {
+  text-decoration: none;
+  background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(128, 0, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-form {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 15px;
-    max-width: 600px;
+a:hover {
+  color: rgba(100, 100, 190);
+  font-style: oblique;
+  font-weight: bold;
 }
 
-form * {
-    border-radius: 10px;
-}
-
-input[type="text"],
-input[type="number"],
-textarea {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid rgba(127, 127, 127, 0.3);
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type="submit"],
-input[type="reset"] {
-    background-color: rgba(83, 158, 63, 0.9);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-}
-
-input[type="reset"] {
-    background-color: rgba(188, 46, 26, 0.9);
-}
-
-table {
-    width: calc(100% - 40px);
-    border-collapse: collapse;
-    margin: 20px 20px;
-    border: 1px solid rgba(127, 127, 127, 0.3);
-}
-
-td, th {
-    border: 1px solid rgba(127, 127, 127, 0.3);
-    text-align: left;
-    padding: 12px;
-}
-
-th {
-    background-color: rgba(83, 109, 121, 0.9);
-    color: white;
-}
-
-tr:hover {
-    background-color: rgba(127, 127, 127, 0.1);
-}
-
-a img {
-    width: 50px;
-    height: 50px;
+.content {
+  flex: 1;
 }
 
 footer {
-    background-color: rgba(83, 109, 121, 0.9);
-    padding: 20px;
-    text-align: center;
-    margin-top: auto;
+  background-color: rgba(100, 100, 150, 0.8);
+}
+
+fieldset {
+  max-width: max-content;
+  border: hidden;
+}
+
+div {
+  margin: auto;
+}
+
+.estiloNav {
+  margin: 0;
+  padding: 0;
+  padding-left: 1%;
+  color: black;
+  list-style: none;
+}
+
+.estiloNav li {
+  display: inline;
+  background-color: aliceblue;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-width: 2px;
+  border-radius: 5px;
+  padding: 0.1%;
+}
+
+#formContacto {
+  background-color: aliceblue;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: black;
+  padding: 2%;
+  scale: 120%;
+}
+
+#formContacto #enviarForm,
+#resetForm {
+  background-color: rgba(230, 230, 255);
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-width: 1px;
+  border-radius: 5px;
+  margin-top: 2%;
+}
+
+#butC input:hover {
+  cursor: pointer;
+  background-color: rgba(200, 200, 255);
+}
+
+.estiloC {
+  background-color: rgba(230, 230, 255);
+  border-style: solid;
+  border-radius: 2px;
+  border-width: 1px;
+  margin: 0;
+  width: 100%;
+  border-color: black;
+}
+
+#nomC {
+  background-color: rgba(230, 230, 255);
+  border-style: solid;
+  border-radius: 2px;
+  border-width: 1px;
+  width: 97%;
+  border-color: black;
+}
+
+#tlfC {
+  background-color: rgba(230, 230, 255);
+  border-style: solid;
+  border-radius: 2px;
+  border-width: 1px;
+  width: 100%;
+  border-color: black;
+}
+
+#tablaObjetos {
+  text-align: center;
+  background-color: aliceblue;
+  border-style: solid;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: rgba(100, 100, 150, 0.5);
+  color: black;
+  margin: 5px;
+}
+
+#tablaObjetos tr td {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(100, 100, 150, 0.5);
+  border-radius: 5px;
+  text-align: center;
+}
+
+#tablaObjetos caption {
+  font-weight: bold;
+  font-size: large;
+  padding-bottom: 10px;
+}
+
+.inFotter p {
+  padding: 5px;
+}
+
+.inFotter img {
+  height: 40px;
+  width: 40px;
+}
+
+.pO {
+  text-align: justify;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#rrss img {
+  float: right;
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 50%;
+  background-color: aliceblue;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    min-height: 200vh; /* Para asegurar el contenido sea accesible en pantallas pequeñas */
+  }
+
+  .estiloNav li {
+    padding: 5px;
+  }
+
+  #formContacto {
+    padding: 5%;
+  }
+
+  #nomC,
+  #tlfC {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .estiloNav li {
+    padding: 10px;
+  }
+
+  #formContacto {
+    padding: 10%;
+  }
+
+  #nomC,
+  #tlfC {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .estiloNav li {
+    padding: 15px;
+  }
+
+  #formContacto {
+    padding: 15%;
+  }
+
+  #nomC,
+  #tlfC {
+    width: 60%;
+  }
 }
