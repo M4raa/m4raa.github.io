@@ -204,7 +204,7 @@ div {
         scale: 70%;
     }
     #tablaObjetos{
-        padding: 2%;
+        margin: 2%;
     }
 
 }
@@ -217,7 +217,7 @@ div {
     #bC{
         scale: 90%;
     }
-    #tablaObjetos1{
+    #tablaObjetos{
         scale: 90%;
     }
 }
