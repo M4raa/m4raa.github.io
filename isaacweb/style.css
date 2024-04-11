@@ -191,11 +191,16 @@ div {
 }
 
 @media only screen and (max-width: 600px) {
+   
     body {
         min-height: 150vh;
       }
     #bI{
-        padding: 5%;
+        padding:5%;
+    }
+    #vid{
+        height: 100%;
+        width: 100%;
     }
     .estiloNav li {
         padding-top: 5px;
