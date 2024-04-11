@@ -192,7 +192,7 @@ div {
 
 @media only screen and (max-width: 600px) {
   body {
-    min-height: 200vh; /* Para asegurar el contenido sea accesible en pantallas pequeñas */
+    min-height: 200vh;
   }
 
   .estiloNav li {
