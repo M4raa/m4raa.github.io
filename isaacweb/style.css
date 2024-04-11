@@ -92,6 +92,9 @@ div {
   padding: 2%;
   scale: 120%;
 }
+#bI{
+    padding:2%;
+}
 
 #formContacto #enviarForm,
 #resetForm {
@@ -195,9 +198,7 @@ div {
     body {
         min-height: 150vh;
       }
-    #bI{
-        padding:5%;
-    }
+
     #vid{
         height: 50%;
         width: 50%;
@@ -209,5 +210,13 @@ div {
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
  
+}
+
+@media only screen and (min-width: 1025px) {
+    #vid{
+        height: 80%;
+        width: 80%;
+    }
+    
 }
 
