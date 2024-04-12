@@ -230,7 +230,7 @@ div {
         width: 60%;
     }
     #bO{
-      min-height: 125vh;
+      min-height:fit-content ;
     }
     
 }
