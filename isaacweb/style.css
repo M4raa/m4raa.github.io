@@ -228,9 +228,8 @@ div {
       width: 60%;
   }
   #tablaObjetos > table {
+    align-items: center;
     min-height: 120vh;
-    border-collapse: separate;
-    border-spacing: 10% 5px;
   }
   
 }
