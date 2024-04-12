@@ -229,6 +229,10 @@ div {
         height: 60%;
         width: 60%;
     }
+    #tablaObjetos {
+      min-height: 150vh;
+      font-size: 100%;
+    }
     
 }
 
