@@ -219,7 +219,6 @@ div {
         scale: 90%;
     }
     #tablaObjetos {
-      min-height: 150vh;
       font-size: 50%;
     }
 }
@@ -228,11 +227,8 @@ div {
       height: 60%;
       width: 60%;
   }
-  #tablaObjetos{
-    display: flex;
-    justify-content: space-evenly;
+  #tablaObjetos > table {
+    min-height: 120vh;
   }
+  
 }
-
-
-
