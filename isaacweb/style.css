@@ -229,7 +229,7 @@ div {
   }
   #tablaObjetos > table {
     min-height: 120vh;
-    min-width: max-content;
+    justify-content: space-between;
   }
   
 }
