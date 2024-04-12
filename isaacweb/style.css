@@ -228,8 +228,8 @@ div {
       height: 60%;
       width: 60%;
   }
-  #tablaObjetos > table{
-    scale: 150%;
+  #tablaObjetos{
+    scale: 120%;
   }
 }
 
