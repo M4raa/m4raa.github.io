@@ -229,7 +229,8 @@ div {
       width: 60%;
   }
   #tablaObjetos{
-    scale: 100%;
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 
