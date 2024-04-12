@@ -230,6 +230,7 @@ div {
   #tablaObjetos > table {
     min-height: 120vh;
     border-collapse: separate;
+    border-spacing: 10% 5px;
   }
   
 }
