@@ -1,0 +1,235 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  background-image: url(/isaacweb/content/bg.webp);
+  background-size: 100%;
+}
+
+header {
+  background-color: rgba(100, 100, 150, 0.8);
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  padding: 0;
+  min-height: 125vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+  width: 11px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(100, 100, 150, 0.5);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 190);
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+div bC {
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+  background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(128, 0, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a:hover {
+  color: rgba(100, 100, 190);
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.content {
+  flex: 1;
+}
+
+footer {
+  background-color: rgba(100, 100, 150, 0.8);
+  bottom:auto;
+}
+
+fieldset {
+  max-width: max-content;
+  border: hidden;
+}
+
+div {
+  margin: auto;
+}
+
+.estiloNav {
+  margin: 0;
+  padding: 0;
+  padding-left: 1%;
+  color: black;
+  list-style: none;
+}
+
+.estiloNav li {
+  display: inline;
+  background-color: aliceblue;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-width: 2px;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding: 0.1%;
+}
+
+#formContacto {
+  background-color: aliceblue;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: black;
+  padding: 2%;
+  scale: 120%;
+}
+#bI{
+    padding:2%;
+}
+
+#formContacto #enviarForm,
+#resetForm {
+  background-color: rgba(230, 230, 255);
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-width: 1px;
+  border-radius: 5px;
+  margin-top: 2%;
+}
+
+#butC input:hover {
+  cursor: pointer;
+  background-color: rgba(200, 200, 255);
+}
+
+.estiloC {
+  background-color: rgba(230, 230, 255);
+  border-style: solid;
+  border-radius: 2px;
+  border-width: 1px;
+  margin: 0;
+  width: 100%;
+  border-color: black;
+}
+
+#nomC {
+  background-color: rgba(230, 230, 255);
+  border-style: solid;
+  border-radius: 2px;
+  border-width: 1px;
+  width: 97%;
+  border-color: black;
+}
+
+#tlfC {
+  background-color: rgba(230, 230, 255);
+  border-style: solid;
+  border-radius: 2px;
+  border-width: 1px;
+  width: 100%;
+  border-color: black;
+}
+
+#tablaObjetos {
+  text-align: center;
+  background-color: aliceblue;
+  border-style: solid;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: rgba(100, 100, 150, 0.5);
+  color: black;
+  margin: 5px;
+}
+
+#tablaObjetos tr td {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(100, 100, 150, 0.5);
+  border-radius: 5px;
+  text-align: center;
+}
+
+#tablaObjetos caption {
+  font-weight: bold;
+  font-size: large;
+  padding-bottom: 10px;
+}
+
+.inFotter p {
+  padding: 5px;
+}
+
+.inFotter img {
+  height: 40px;
+  width: 40px;
+}
+
+.pO {
+  text-align: justify;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#rrss img {
+  float: right;
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 50%;
+  background-color: aliceblue;
+}
+
+@media only screen and (max-width: 600px) {
+  
+    #vid{
+        height: 70%;
+        width: 70%;
+    }
+    #bC{
+        scale: 70%;
+    }
+    #tablaObjetos {
+      font-size: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    #vid{
+        height: 60%;
+        width: 60%;
+    }
+    #bC{
+        scale: 90%;
+    }
+    #tablaObjetos {
+      font-size: 50%;
+    }
+}
+@media only screen and (min-width: 1025px) {
+  #vid{
+      height: 60%;
+      width: 60%;
+  }
+  #tablaObjetos > table {
+    justify-content: center;
+    min-height: 120vh;
+  }
+  
+}
