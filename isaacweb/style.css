@@ -204,39 +204,8 @@ div {
         scale: 70%;
     }
     #tablaObjetos {
-      font-size: 12px; /* Reduce el tamaño de fuente para pantallas pequeñas */
-      overflow-x: auto;
-      margin: 0 auto;
-      width: 90%; /* Ajusta el ancho para que quepa en pantallas pequeñas */
-    }
-  
-    #tablaObjetos tr {
-      display: block;
-      margin-bottom: 10px;
-    }
-  
-    #tablaObjetos th,
-    #tablaObjetos td {
-      display: block;
-      text-align: left;
-    }
-  
-    #tablaObjetos th {
-      font-size: 14px; /* Tamaño de fuente para encabezados en pantallas pequeñas */
-      font-weight: bold;
-    }
-  
-    #tablaObjetos td {
-      font-size: 12px; /* Tamaño de fuente para celdas en pantallas pequeñas */
-      border: none;
-      border-bottom: 1px solid #ddd;
-    }
-  
-    #tablaObjetos td:before {
-      content: attr(data-label);
-      float: left;
-      font-weight: bold;
-      text-transform: uppercase;
+      font-size: 50%;
+      max-width: 90%;
     }
 
 }
@@ -250,39 +219,8 @@ div {
         scale: 90%;
     }
     #tablaObjetos {
-      font-size: 14px; /* Tamaño de fuente para pantallas medianas */
-      overflow-x: auto;
-      margin: 0 auto;
-      width: 90%; /* Ajusta el ancho para que quepa en pantallas medianas */
-    }
-  
-    #tablaObjetos tr {
-      display: block;
-      margin-bottom: 10px;
-    }
-  
-    #tablaObjetos th,
-    #tablaObjetos td {
-      display: block;
-      text-align: left;
-    }
-  
-    #tablaObjetos th {
-      font-size: 16px; /* Tamaño de fuente para encabezados en pantallas medianas */
-      font-weight: bold;
-    }
-  
-    #tablaObjetos td {
-      font-size: 14px; /* Tamaño de fuente para celdas en pantallas medianas */
-      border: none;
-      border-bottom: 1px solid #ddd;
-    }
-  
-    #tablaObjetos td:before {
-      content: attr(data-label);
-      float: left;
-      font-weight: bold;
-      text-transform: uppercase;
+      font-size: 50%;
+      max-width: 90%;
     }
 }
 
