@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    padding-left: 45%;
+    padding-top: 20%;
+    display: inline-flex;
+    font-size: large;
+    font-weight: bold;
+}
+section #a2 {
+    display: flex;
+}
+#a2 p {
+    font-size: 2rem;
+    margin: 0 5px;
+    animation: jump 0.6s ease-in-out infinite ;
+}
+#a2 #p1 {
+    animation-delay: 0.1s;
+}
+#a2 #p2 {
+    animation-delay: 0.2s;
+}
+#a2 #p3 {
+    animation-delay: 0.3s;
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-10px);
+    }
+    70%, 100% {
+        transform: translateY(0);
+    }
+}
