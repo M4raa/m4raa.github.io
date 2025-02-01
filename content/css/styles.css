@@ -1,0 +1,211 @@
+:root{
+    a{
+        text-decoration: none;
+    }
+}
+header, footer, main, .custom_btn {
+    transition: background-color 0.8s ease, color 0.8s ease, border-color 0.8s ease;
+}
+header{
+    .dropdown-toggle::after {
+        content: none;
+    }
+    .custom-navbar{
+        font-size: 20px;
+        padding: 5px;
+        border-radius: 10px;
+        .nav-link{
+            border: 1px #838383 solid;
+            border-radius: 5px;
+            padding: 5px;
+            transition: background-color 0.8s ease, border-color 0.8s ease;
+        }
+        .hover{
+            border: 2px #838383 solid;
+            border-radius: 8px;
+            padding: 7px;
+            background-color: #474747;
+        }
+        .active{
+            background-color: #636363;
+            border-color: #808080;
+        }
+    }
+    .header_btn{
+        padding: 0;
+        width: fit-content;
+        .btn_top{
+            padding: 0.15em 0.33em !important;
+        }
+    }
+    .hamburger_btn {
+        display: none;
+        .btn_top{
+            padding: 0.15em 0.42em !important;
+        }
+    }
+}
+/* INDEX STYLES */
+.index{
+    .popular_projects{
+        .card{
+            width: 15rem;
+        }
+    }
+    .tools{
+        .card{
+            img{
+                width: 5rem;
+                height: auto;
+            }
+        }
+    }
+}
+/* CONTACT STYLES */
+#contact-main{
+    .btn_top{
+        width: 100%;
+    }
+}
+
+/* MAIN STYLES */
+main{
+    min-height: 100vh;
+    .downloadBtn{
+        width: fit-content;
+        .btn_top{
+            padding: 0.15em 0.33em !important;
+        }
+    }
+}
+
+/* FOOTER STYLES */
+footer{
+    .custom_btn{
+        .btn_top{
+            padding: 0.18em 0.40em !important;
+        }
+    }
+
+}
+
+/* GENERAL STYLES */
+.custom_btn{
+    --button_radius: 0.75em;
+    padding: 0;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.clear_btn {
+    --button_color: #e8e8e8;
+    --button_outline_color: #000000;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+    transition: background-color 0.8s ease, color 0.8s ease, border-color 0.8s ease;
+}
+.dark_btn{
+    --button_color: #1a1a1a;
+    --button_outline_color: #ffffff;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+    transition: background-color 0.8s ease, color 0.8s ease, border-color 0.8s ease;
+}
+
+.btn_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease, background-color 0.8s ease, color 0.8s ease;
+}
+
+.custom_btn:hover .btn_top {
+    transform: translateY(-0.33em);
+}
+
+.custom_btn:active .btn_top {
+    transform: translateY(0);
+}
+.btn-go-top{
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    padding: 0;
+    width: fit-content;
+    .btn_top{
+        padding: 0.13em 0.50em !important;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        .hamburger_btn{
+            display: block !important;
+        }
+        .menu {
+            display: none;
+            flex-direction: column;
+            background: white;
+            gap: 1em;
+            position: absolute;
+            z-index: 1;
+            border: 1px solid black;
+            border-radius: 20px;
+            top: 3rem;
+            right: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+            transition: transform 0.1s ease, background-color 0.8s ease, color 0.8s ease;
+        }
+        .menu.active {
+            display: flex !important;
+        }
+    }
+    .popular_projects div:first-of-type{
+        flex-direction: column !important;
+    }
+    .index {
+        #portrait{
+            width: 11rem !important;
+            height: 11rem !important;
+        }
+        .tools{
+            .card{
+                img{
+                    width: 3rem; !important;
+                    height: auto; !important;
+                }
+                width: 10em;
+            }
+        }
+        .tools-div{
+            flex-direction: column !important;
+        }
+    }
+    .all_projects{
+        flex-direction: column !important;
+    }
+    video{
+        height: 240px !important;
+        width: 360px !important;
+    }
+    iframe{
+        height: 240px !important;
+        width: 360px !important;
+    }
+    .about-container{
+        img{
+            height: 200px !important;
+            width: 200px !important;
+        }
+        display: flex;
+        flex-direction: column !important;
+        text-align: justify;
+    }
+}
