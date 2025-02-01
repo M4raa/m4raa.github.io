@@ -142,6 +142,9 @@ footer{
         padding: 0.13em 0.50em !important;
     }
 }
+.learning{
+    color: #0d6efd;
+}
 
 @media (max-width: 768px){
     header{
