@@ -133,7 +133,7 @@ footer .custom_btn .btn_top{
     width: 15rem;
     height: 15rem;
 }
-.menu{
+.header-nav .menu{
     display: flex;
     flex-direction: row;
 }
