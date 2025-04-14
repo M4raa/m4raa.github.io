@@ -1,0 +1,471 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="M4ra">
+  <!-- Contenido Principal -->
+  <main class="container mx-auto flex flex-col justify-between items-center">
+    <!-- Introduction -->
+    <section class="hero">
+      <div class="hero-content flex-col lg:flex-row">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+          class="rounded-full w-52 h-52 object-cover"
+        />
+        <div>
+          <h1 class="text-5xl font-bold">ppp</h1>
+          <p class="py-6">
+            Hi! My name is David but usually use the alias Mara. I'm a fullstack
+            developer who likes cybersecurity, and this is my portfolio.
+          </p>
+          <button class="btn btn-primary">Download my CV</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider divider-primary"></div>
+
+    <!-- Projects -->
+    <section class="flex flex-col w-full gap-10">
+      <h2 class="text-4xl font-bold">Those are some of my projects:</h2>
+      <section class="flex flex-row gap-10 justify-around">
+        <div class="bg-primary card w-full shadow-sm">
+          <figure class="px-2 pt-2">
+            <img src="img/m4wser.webp" alt="M4wser image" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-2xl">M4WSER</h2>
+            <p class="text-xl">
+              Web browser focused in OSINT & enhanced with AI
+            </p>
+            <div class="card-actions">
+              <button class="btn btn-secondary">View more...</button>
+            </div>
+          </div>
+        </div>
+        <div class="bg-primary card w-full shadow-sm">
+          <figure class="px-2 pt-2">
+            <img
+              src="img/spotifyclone.webp"
+              alt="spotifyclone image"
+              class="rounded-xl"
+            />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-2xl">SPOTIFY CLONE</h2>
+            <p class="text-xl">Basic Spotify clone</p>
+            <div class="card-actions">
+              <button class="btn btn-secondary">View more...</button>
+            </div>
+          </div>
+        </div>
+        <div class="bg-primary card w-full shadow-sm">
+          <figure class="px-2 pt-2">
+            <img
+              src="img/tracker.webp"
+              alt="tracker image"
+              class="rounded-xl"
+            />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-2xl">GAME TRACKER</h2>
+            <p class="text-xl">Game stats tracker</p>
+            <div class="card-actions">
+              <button class="btn btn-secondary">View more...</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <div class="divider divider-primary"></div>
+
+    <!-- Tools -->
+    <section class="flex flex-col gap-10 w-full">
+      <h2 class="text-4xl font-bold">Tools I work with</h2>
+      <div class="container mx-auto px-16">
+        <!-- Languages -->
+        <section class="flex flex-col gap-3">
+          <h2 class="text-2xl font-bold">Languages</h2>
+          <div class="flex flex-row ml-5 gap-3">
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                  alt="Java icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">Java</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/javascript"
+                  alt="Javascript icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">JavaScript</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/typescript"
+                  alt="Typecript icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">TypeScript</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/php"
+                  alt="Php icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">PHP</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/python"
+                  alt="Python icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">Python</p>
+                <p class="card-title learning">Learning...</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/c"
+                  alt="C icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">C</p>
+                <p class="card-title learning">Learning...</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/cplusplus"
+                  alt="Cpp icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">C++</p>
+                <p class="card-title learning">Learning...</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/dart"
+                  alt="Dart icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">Dart</p>
+                <p class="card-title learning">Learning...</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <divider class="divider divider-accent"></divider>
+        <!-- Frontend -->
+        <div class="flex flex-col gap-3">
+          <h2 class="text-2xl font-bold">Frontend</h2>
+          <div class="flex flex-row ml-5 gap-3">
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/html5"
+                  alt="Html icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">HTML</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/css3"
+                  alt="Css icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">CSS</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/bootstrap"
+                  alt="Bootstrap icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">Bootstrap</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/tailwindcss"
+                  alt="Tailwind icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">Tailwind</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <divider class="divider divider-accent"></divider>
+        <!-- Backend -->
+        <div class="flex flex-col gap-3">
+          <h2 class="text-2xl font-bold">Backend</h2>
+          <div class="flex flex-row ml-5 gap-3">
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                  alt="Java icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">Java</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/php"
+                  alt="Php icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">PHP</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <divider class="divider divider-accent"></divider>
+        <!-- Databases -->
+        <div class="flex flex-col gap-3">
+          <h2 class="text-2xl font-bold">Database</h2>
+          <div class="flex flex-row ml-5 gap-3">
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/mysql"
+                  alt="SQL icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">SQL</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/firebase"
+                  alt="NoSQL icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">NoSQL</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/mongodb"
+                  alt="MongoDB icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">MongoDB</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/redis"
+                  alt="Redis icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">Redis</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/mariadb"
+                  alt="MariaDB icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">MariaDB</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <divider class="divider divider-accent"></divider>
+        <!-- Frameworks -->
+        <div class="flex flex-col gap-3">
+          <h2 class="text-2xl font-bold">Frameworks</h2>
+          <div class="flex flex-row ml-5 gap-3">
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/springboot"
+                  alt="Spring Boot icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">Spring Boot</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/symfony"
+                  alt="Symfony icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">Symfony</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/angular"
+                  alt="Angular icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">Angular</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/astro"
+                  alt="Astro icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">Astro</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/flutter"
+                  alt="Flutter icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">Flutter</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/webpack"
+                  alt="Webpack icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">WebCore</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <divider class="divider divider-accent"></divider>
+        <!-- Others -->
+        <div class="flex flex-col gap-3">
+          <h2 class="text-2xl font-bold">Various</h2>
+          <div class="flex flex-row ml-5 gap-3">
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/git"
+                  alt="Git icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">Git</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/docker"
+                  alt="Docker icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">Docker</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 py-1">
+              <figure>
+                <img
+                  src="https://cdn.simpleicons.org/figma"
+                  alt="Figma Icon"
+                  class="w-20 h-20 object-cover rounded-lg"
+                />
+              </figure>
+              <div class="card-body text-center">
+                <p class="card-title">Figma</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
