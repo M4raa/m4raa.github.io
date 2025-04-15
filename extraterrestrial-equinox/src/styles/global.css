@@ -1,5 +1,18 @@
 @import "tailwindcss";
 @plugin "daisyui";
 @plugin "daisyui" {
-  themes: light --default, dark --prefersdark, forest;
+  themes: light --default, dark --prefersdark, forest, nord;
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: fade 0.3s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

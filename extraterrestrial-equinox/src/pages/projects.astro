@@ -1,14 +1,79 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import spotify from "@assets/spotifyclone.webp";
+import m4wser from "@assets/m4wser.webp";
+import livechat from "@assets/livechat.webp";
+import tracker from "@assets/tracker.webp";
 ---
 
 <BaseLayout title="M4ra - Projects">
-  <!-- Header -->
-  <Header />
-  <!-- Contenido Principal -->
-  <main></main>
-  <!-- Footer -->
-  <Footer />
+  <!-- Projects -->
+  <main class="container mx-auto">
+    <h1 class="text-5xl font-bold">This are all my projects:</h1>
+    <div class="flex flex-row p-3 justify-center gap-2">
+      <!-- M4WSER -->
+      <div class="bg-primary card w-full shadow-sm">
+        <figure class="px-2 pt-2">
+          <Image src={m4wser} alt="M4wser image" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-2xl">M4WSER</h2>
+          <p class="text-xl">Web browser focused in OSINT & enhanced with AI</p>
+          <div class="card-actions">
+            <a view-transition class="btn btn-secondary" href="/projects/m4wser">View more...</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- SPOTIFY -->
+      <div class="bg-primary card w-full shadow-sm">
+        <figure class="px-2 pt-2">
+          <Image src={spotify} alt="spotifyclone image" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-2xl">SPOTIFY CLONE</h2>
+          <p class="text-xl">Basic Spotify clone</p>
+          <div class="card-actions">
+            <a view-transition class="btn btn-secondary" href="/projects/spotify"
+              >View more...</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- TRACKER -->
+      <div class="bg-primary card w-full shadow-sm">
+        <figure class="px-2 pt-2">
+          <Image src={tracker} alt="tracker image" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-2xl">GAME TRACKER</h2>
+          <p class="text-xl">Game stats tracker</p>
+          <div class="card-actions">
+            <a view-transition class="btn btn-secondary" href="/projects/tracker"
+              >View more...</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- LIVECHAT -->
+      <div class="bg-primary card w-full shadow-sm">
+        <figure class="px-2 pt-2">
+          <Image src={livechat} alt="live chat image" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-2xl">LIVE chat</h2>
+          <p class="text-xl">Live chat</p>
+          <div class="card-actions">
+            <a view-transition class="btn btn-secondary" href="/projects/livechat"
+              >View more...</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </BaseLayout>

@@ -1,0 +1,54 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import video from "@assets/tracker.mp4";
+---
+
+<BaseLayout title="M4WSER">
+  <!-- M4WSER -->
+  <main class="container mx-auto">
+    <h1 class="text-4xl font-bold text-center pb-5">M4WSER</h1>
+    <div class="flex flex-col gap-4 items-center justify-center">
+      <video width="720" height="480" autoplay loop muted>
+        <source src={video} type="video/mp4" />
+        Your browser doesn't support the tag video.
+      </video>
+      <div class="text-xl mb-5 text-justify">
+        <p>
+          This project is my final project for the vocational grade I'm
+          studying, and it's my favourite, but also the most complicated one.
+        </p>
+        <p>
+          I really love cibersecurity, so, for the project I decided that I
+          would do something relationated with it, that's why this browser
+          implements a little bit of AI to perform <a
+            class="link link-primary"
+            href="https://en.wikipedia.org/wiki/Google_hacking"
+            >Google Dorking</a
+          > searches in the most efficient way. Google Dorking it's a way in where
+          we search for information that's publicly avaliable,but you can't access
+          just by normaly browsing. It's a method usually used in OSINT environments.
+        </p>
+        <p>
+          The browser it's mainly coded in Java and uses Spring Boot with
+          JavaFX. I also use MongoDB to store the browsing history.
+        </p>
+        <p>
+          One of the main objectives I have is the full customization, that's
+          why in the settings you can almost change everything.
+        </p>
+        <p>I will try my best to keep improving this project.</p>
+        <p>Thanks for watching! I leave the code down below.</p>
+      </div>
+      <div class="divider divider-accent">Github</div>
+      <div>
+        <button class="btn btn-soft btn-accent">
+          <a
+            class="link link-primary"
+            href="https://github.com/M4raa/BROWSER"
+            target="_blank"><i class="fab fa-github"></i></a
+          >
+        </button>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

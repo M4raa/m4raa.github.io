@@ -1,0 +1,53 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import video from "@assets/tracker.mp4";
+---
+
+<BaseLayout title="TRACKER">
+  <!-- TRACKER -->
+  <main class="container mx-auto">
+    <h1 class="text-4xl font-bold text-center pb-5">GAME TRACKER</h1>
+    <div class="flex flex-col gap-4 items-center justify-center">
+      <video width="720" height="480" autoplay loop muted>
+        <source src={video} type="video/mp4" />
+        Your browser doesn't support the video tag.
+      </video>
+      <div class="text-xl mb-5 text-justify">
+        <p>
+          This project is a mix of multiple game's API so you can track a player
+          or data of each game.
+        </p>
+        <p>Right now still in development.</p>
+        <p>Thanks for watching!</p>
+        <p>Thanks to my colleagues with whom I worked on this project:</p>
+        <div class="flex flex-col">
+          <a
+            view-transition
+            class="link link-primary"
+            href="https://github.com/victorTeleanu">Victor Teleanu</a
+          >
+          <a
+            view-transition
+            class="link link-primary"
+            href="https://github.com/RobertoPecurto">Roberto Pecurto</a
+          >
+          <a
+            view-transition
+            class="link link-primary"
+            href="https://github.com/alexfc99">Alexandru Claudiu Fatu</a
+          >
+        </div>
+      </div>
+      <div class="divider divider-accent">Github</div>
+      <div>
+        <button class="btn btn-soft btn-accent">
+          <a
+            class="link link-primary"
+            href="https://github.com/M4raa/TRACKER-PROJECT"
+            target="_blank"><i class="fab fa-github"></i></a
+          >
+        </button>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

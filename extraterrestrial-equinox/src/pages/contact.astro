@@ -1,14 +1,65 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="M4ra - Contact">
-  <!-- Header -->
-  <Header />
-  <!-- Contenido Principal -->
-  <main></main>
-  <!-- Footer -->
-  <Footer />
+  <!-- Contact -->
+  <main class="flex justify-center items-center">
+    <form>
+      <fieldset
+        class="fieldset w-full max-w-2xl bg-base-100 border-2 border-primary p-8 rounded-box shadow-lg space-y-6"
+      >
+        <legend class="fieldset-legend text-2xl font-bold mb-4">CONTACT</legend>
+
+        <p class="text-xl m-0 p-0">
+          Send me a mail to:
+          <a
+            class="link link-primary"
+            href="mailto:m4araa@proton.me?subject=Question"
+          >
+            M4aRaa@proton.me
+          </a>
+          or fill the contact form below:
+        </p>
+
+        <div>
+          <label class="label">
+            <span class="label-text text-lg">First name</span>
+          </label>
+          <input
+            type="text"
+            class="input input-lg w-full border-accent"
+            placeholder="John"
+          />
+        </div>
+
+        <div>
+          <label class="label">
+            <span class="label-text text-lg">Last name</span>
+          </label>
+          <input
+            type="text"
+            class="input input-lg w-full border-accent"
+            placeholder="Doe"
+          />
+        </div>
+
+        <div>
+          <label class="label">
+            <span class="label-text text-lg">Message</span>
+          </label>
+          <textarea
+            class="textarea textarea-lg w-full h-40 border-accent"
+            placeholder="Write your message..."></textarea>
+        </div>
+
+        <div class="flex justify-end gap-4 pt-4">
+          <button type="reset" class="btn btn-outline btn-accent w-1/3"
+            >Reset</button
+          >
+          <button type="submit" class="btn btn-primary flex-grow">Send</button>
+        </div>
+      </fieldset>
+    </form>
+  </main>
 </BaseLayout>
