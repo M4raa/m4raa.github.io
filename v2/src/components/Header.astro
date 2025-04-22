@@ -1,0 +1,95 @@
+---
+
+---
+
+<header id="header" class="text-white">
+  <section
+    class="container mx-auto flex flex-wrap justify-between items-center py-2 px-4"
+  >
+    <!-- Logo / Marca -->
+    <a view-transition href="/" class="flex-shrink-0">
+      <h1 id="title" class="m-0 uppercase text-2xl flex items-center">
+        <!-- Puedes ajustar el icono si tienes un paquete de iconos compatible con Tailwind -->
+        <i class="bi bi-shop text-blue-500 mr-3 text-3xl"></i>
+        M4ra Portfolio
+      </h1>
+    </a>
+    <!-- Menú Principal -->
+    <nav class="join hidden md:block">
+      <a view-transition class="btn btn-soft btn-primary join-item" href="/"
+        >INDEX</a
+      >
+      <a
+        view-transition
+        class="btn btn-soft btn-primary join-item"
+        href="/projects">PROJECTS</a
+      >
+      <a
+        view-transition
+        class="btn btn-soft btn-primary join-item"
+        href="/about">ABOUT</a
+      >
+      <a
+        view-transition
+        class="btn btn-soft btn-primary join-item"
+        href="/contact">CONTACT</a
+      >
+    </nav>
+
+    <!-- Botones adicionales -->
+    <div>
+      <!-- Botón para modo oscuro/claro -->
+      <button
+        id="themeToggle"
+        class="btn btn-soft btn-primary"
+        data-toggle-theme="nord,default"
+        data-act-class="ACTIVE"
+        aria-label="Toggle Theme"
+      >
+        <i id="themeIcon" class="fa-solid fa-moon"></i>
+      </button>
+
+      <!-- Botón Hamburger (menu móvil) -->
+      <div
+        class="btn btn-soft btn-primary dropdown flex md:hidden"
+        aria-label="Toggle navigation"
+      >
+        <div tabindex="0" role="button">☰</div>
+        <ul
+          tabindex="0"
+          class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 shadow-sm"
+        >
+          <li>
+            <a
+              view-transition
+              class="btn btn-soft btn-primary join-item"
+              href="/">INDEX</a
+            >
+          </li>
+          <li>
+            <a
+              view-transition
+              class="btn btn-soft btn-primary join-item"
+              href="/projects">PROJECTS</a
+            >
+          </li>
+          <li>
+            <a
+              view-transition
+              class="btn btn-soft btn-primary join-item"
+              href="/about">ABOUT</a
+            >
+          </li>
+          <li>
+            <a
+              view-transition
+              class="btn btn-soft btn-primary join-item"
+              href="/contact">CONTACT</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</header>
+<div class="divider divider-accent"></div>

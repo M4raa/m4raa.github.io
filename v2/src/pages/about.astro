@@ -1,0 +1,66 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import pfp from "@assets/yo.jpg";
+import { Image } from "astro:assets";
+---
+
+<BaseLayout title="M4ra - About">
+  <!-- About -->
+  <main>
+    <div
+      class="container mx-auto flex flex-col gap-5 justify-center items-center"
+    >
+      <Image
+        src={pfp}
+        class="rounded-full w-52 h-52 object-cover"
+        alt="Profile picture"
+      />
+      <p class="text-justify">
+        Hi! Im Mara, a web development student with a strong passion for
+        technology and a clear goal: to specialize in cybersecurity. I am
+        fascinated by understanding how systems work from the inside and how to
+        protect them from potential vulnerabilities. In the future, I aim to
+        earn certifications like OSCP or PEN-200 to deepen my knowledge in
+        penetration testing and offensive security. As I continue to learn and
+        refine my programming skills, I enjoy taking on new challenges and
+        building projects that bring me closer to my goal of becoming a
+        cybersecurity expert.
+      </p>
+      <div class="divider divider-accent">Socials</div>
+      <div class="flex justify-center gap-6 text-4xl">
+        <a
+          view-transition
+          href="https://github.com/M4raa"
+          target="_blank"
+          class="hover:text-blue-400"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          view-transition
+          href="https://www.linkedin.com/in/m4ra/"
+          target="_blank"
+          class="hover:text-blue-400"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          view-transition
+          href="https://www.instagram.com/"
+          target="_blank"
+          class="hover:text-blue-400"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          view-transition
+          href="https://x.com/"
+          target="_blank"
+          class="hover:text-blue-400"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

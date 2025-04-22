@@ -1,0 +1,42 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+const video = "https://www.youtube.com/embed/SF66iB7L1wE";
+---
+
+<BaseLayout title="M4WSER">
+  <!-- M4WSER -->
+  <main class="container mx-auto">
+    <h1 class="text-4xl font-bold text-center pb-5">LIVE CHAT</h1>
+    <div class="flex flex-col gap-4 items-center justify-center">
+      <iframe width="720" height="480" src={video} allowfullscreen></iframe>
+      <div class="text-xl mb-5 text-justify">
+        <p>
+          This project is mini project that I created following the Adam La
+          Morre <a
+            class="link link-primary"
+            href="https://www.youtube.com/watch?v=SF66iB7L1wE">tutorial</a
+          > .
+        </p>
+        <p>
+          Right now it doesn't work due to problems with ChatEngine.io, but feel
+          free to use the code down below.
+        </p>
+        <p>Thanks for watching!</p>
+        <p>Original creator:</p>
+        <div class="flex flex-col">
+          <a class="link link-primary" href="https://github.com/alamorre">Adam La Morre</a>
+        </div>
+      </div>
+      <div class="divider divider-accent">Github</div>
+      <div>
+        <button class="btn btn-soft btn-accent">
+          <a
+            class="link link-primary"
+            href="https://github.com/M4raa/LIVE_CHAT"
+            target="_blank"><i class="fab fa-github"></i></a
+          >
+        </button>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

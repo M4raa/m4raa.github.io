@@ -1,0 +1,52 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import video from "@assets/spotify.mp4";
+---
+
+<BaseLayout title="SPOTIFY - CLONE">
+  <!-- SPOTIFY -->
+  <main class="container mx-auto">
+    <h1 class="text-4xl font-bold text-center pb-5">SPOTIFY CLONE</h1>
+    <div class="flex flex-col gap-4 items-center justify-center">
+      <video width="720" height="480" autoplay loop muted playsinline>
+        <source src={video} type="video/mp4" />
+        Your browser doesn't support the video tag.
+      </video>
+      <div class="text-xl mb-5 text-justify">
+        <p>
+          This project is basically a GUI to interact with the Spotify API. You
+          can search for tracks, authors, playlists and albums.You will obtain a
+          result as shown on the video ahead, but as you can see, you can no
+          longer play any song becouse Spotify deprecated the preview of the
+          songs.
+        </p>
+        <p>
+          We could improve the project and implement a new music player, but
+          right now it's not on our plans. If you want to try it, I've put the
+          link down below.
+        </p>
+        <p>Thanks for watching!</p>
+        <br />
+        <p>Thanks to my colleagues with whom I worked on this project:</p>
+        <div class="flex flex-col">
+          <a class="link link-primary" view-transition href="https://github.com/victorTeleanu"
+            >Victor Teleanu</a
+          >
+          <a class="link link-primary" view-transition href="https://github.com/RobertoPecurto"
+            >Roberto Pecurto</a
+          >
+        </div>
+      </div>
+      <div class="divider divider-accent">Github</div>
+      <div>
+        <button class="btn btn-soft btn-accent">
+          <a
+            class="link link-primary"
+            href="https://github.com/M4raa/ProjectSpotify"
+            target="_blank"><i class="fab fa-github"></i></a
+          >
+        </button>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
