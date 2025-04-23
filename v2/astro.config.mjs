@@ -5,7 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  base: '/m4raa.github.io/', // 👈 importante si usas gh-pages y no un dominio personalizado
+  base: '/',
   outDir: '../docs', 
   vite: {
     plugins: [tailwindcss()],
